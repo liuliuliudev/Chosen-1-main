@@ -21,3 +21,9 @@
 - NASA, *Small Spacecraft Technology State of the Art: Deorbit Systems*, https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/ ，访问日期 2026-09-27。文中指出部分帆方案依赖姿态控制；本项目 10 m² 有效迎风面积尚无姿态保持证明。
 
 上述资料只约束估算的方向和数量级。`config/engineering_budget_candidate.csv` 的 `basis` 列标明原方案范围、原方案功率示例、`baseline_case` 或团队分配；未查到具体器件和实际任务资料的项目保持 `candidate/unknown`。本轮没有替换候选大气表，也没有把主办方未提供的完整规则文件标为已取得。
+
+## 2026-09-30 实际补证
+
+新取得的来源、逐行大气数值对照、BHT-200 同一数据表参数、供电研究假设和帆任务对照见 `资料核对与工程补证报告.md`；本地副本位于 `../data/raw/public_20260930_130029/`。原先“没有任何原始大气文件”的状态已更新为“14 行数值与官方配套数据一致，单位注释冲突和高度口径适用性仍待核对”。不能因此将整个大气模型标为认证通过。
+
+NASA 供电页面本次返回 429，未将先前访问记录当成本次重新核验。Crossref 题录与摘要检索不是全文评审，也不是完整的新颖性或专利检索。

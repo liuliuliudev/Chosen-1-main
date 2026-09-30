@@ -1,0 +1,14 @@
+scenarioId,inputSailState,inputPower_W,commandMode,thrustOn,deploySail,safeMode,nextPhase,reasonCode,assumptionStatus
+nominal_thrust,stowed,650,thrust,1,0,0,thrust,THRUST_PERMITTED,candidate_simulation
+switch_deploy,stowed,650,deploy,0,1,0,deploy,SWITCH_REACHED,candidate_simulation
+deploy_unconfirmed,stowed,650,safe,0,0,1,safe,DEPLOYMENT_UNCONFIRMED,candidate_simulation
+sail_confirmed,deployed,650,sail,0,0,0,sail,SAIL_CONFIRMED,candidate_simulation
+authorization_denied,stowed,650,safe,0,0,1,safe,AUTHORIZATION_DENIED,candidate_simulation
+low_power,stowed,214,safe,0,0,1,safe,BASE_POWER_INSUFFICIENT,candidate_simulation
+attitude_fault,stowed,650,safe,0,0,1,safe,ATTITUDE_UNAVAILABLE,candidate_simulation
+thruster_fault,stowed,650,deploy,0,1,0,deploy,THRUSTER_FAILED_DEPLOY_EARLY,candidate_simulation
+half_sail,partial,650,fallback_thrust,1,0,0,fallback_thrust,SAIL_FAULT_THRUST_FALLBACK,candidate_simulation
+sail_failed,failed,650,fallback_thrust,1,0,0,fallback_thrust,SAIL_FAULT_THRUST_FALLBACK,candidate_simulation
+fuel_exhausted,stowed,650,deploy,0,1,0,deploy,FUEL_EXHAUSTED_DEPLOY_EARLY,candidate_simulation
+unknown_power,stowed,NaN,safe,0,0,1,safe,POWER_UNKNOWN,candidate_simulation
+endpoint,stowed,650,complete,0,0,0,complete,MODEL_ENDPOINT_REACHED,candidate_simulation

@@ -20,6 +20,15 @@ switch upper(c.fault)
         error('Unknown fault: %s',c.fault);
 end
 validateCase(p);
+if isfield(c,'Isp_s') && isfinite(c.Isp_s)
+    assert(c.Isp_s > 0);
+    p.thruster.Isp_s = c.Isp_s;
+end
 % 将案例名称转为传播器可以直接使用的控制策略。
 c.policy = controlPolicy(c);
+if isfield(c,'effectiveAreaFactor')
+    assert(isfinite(c.effectiveAreaFactor) && c.effectiveAreaFactor >= 0 && c.effectiveAreaFactor <= 1);
+    c.policy.sailBefore = c.policy.sailBefore*c.effectiveAreaFactor;
+    c.policy.sailAfter = c.policy.sailAfter*c.effectiveAreaFactor;
+end
 end

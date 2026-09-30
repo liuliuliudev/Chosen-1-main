@@ -1,0 +1,46 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+PASS testSafeEntry
+       group       caseId    timeError_s    windowError_s    fuelError_kg    pass 
+    ___________    ______    ___________    _____________    ____________    _____
+
+    "baselines"    "case"        Inf              0               0          false
+
+PASS testReproductionComparison
+PASS testAdvanceReserve
+PASS testDeploymentProcess
+PASS testCurrentWorkflow
+PASS testPowerPerturbation
+U2 combined: 585 W, 270 Wh, initial 70%, common load +10%
+       caseId        energyError_Wh    unmetError_Wh    bounded    fuelError_kg    deployCommands    confirmations    pass 
+    _____________    ______________    _____________    _______    ____________    ______________    _____________    _____
+
+    "U2_COMBINED"          0                 0           true       2.3592e-14           1                 1          true 
+
+       caseId         status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    _____________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "U2_COMBINED"    "reentry"       4.4043           "observed"             true                   14                    13.34             13.34       10.47        0.4396         71.851          NaN         47.826  
+
+    solar_W    capacity_Wh    initialFraction    safeLoad_W    thrustLoad_W    minimumBattery_Wh    marginAboveFloor_Wh    unmetEnergy_Wh
+    _______    ___________    _______________    __________    ____________    _________________    ___________________    ______________
+
+      585          270              0.7             251            581              70.563                16.563                 0       
+
+    sameStatus    timeError_s    fuelError_kg    pass 
+    __________    ___________    ____________    _____
+
+      true           4.006        7.1054e-14     true 
+
+U2 output: C:\Users\刘丰衔\Desktop\Chosen-1-main\Coding\results\u2_20260930_213741_686

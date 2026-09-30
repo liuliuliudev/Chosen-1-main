@@ -1,0 +1,22 @@
+[
+  {
+    "group": "A1",
+    "source": "Coding/results/current_20260930_200345_605/a1/tables/power_a1_summary.csv",
+    "sha256": "467f91939897866573493b5381b3328734ff9db605d03ae6bc76d8e597e18e24"
+  },
+  {
+    "group": "A2",
+    "source": "Coding/results/current_20260930_200345_605/a2/tables/deployment_summary.csv",
+    "sha256": "97443fce10d2eafdb31a9005e58cc24a158e982216bdb9f03b42acbcccfcd50c"
+  },
+  {
+    "group": "U1",
+    "source": "Coding/results/u1_20260930_211336_825/tables/uncertainty_summary.csv",
+    "sha256": "bffef94ede1432d24e3780fa65e4f64d4ca106ac238d4238299fb19840740e0f"
+  },
+  {
+    "group": "U2",
+    "source": "Coding/results/u2_20260930_213741_686/tables/uncertainty_summary.csv",
+    "sha256": "7d6f9fb6c2936d528dd7a2a312b94ec0ce519a61bd32c1b10d5c29ca55b42e09"
+  }
+]

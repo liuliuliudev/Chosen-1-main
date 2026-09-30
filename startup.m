@@ -1,6 +1,6 @@
 function root = startup()
 %STARTUP 将本工程的代码目录加入 MATLAB 搜索路径。
-root = fileparts(mfilename('fullpath'));
+root = fullfile(fileparts(mfilename('fullpath')),'Coding');
 addpath(root);
 % 显式列出所需目录，避免把结果和原始数据目录也加入路径。
 folders = {'config','src/dynamics','src/environment','src/control', ...

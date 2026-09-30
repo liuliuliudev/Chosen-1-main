@@ -8,7 +8,12 @@ end
 if nargin < 2 || isempty(pBase), pBase = baseline_case(); end
 if nargin < 3, budgetFile = []; end
 ledger = loadEngineeringBudget(budgetFile);
-groups = {'baselines','switch','density','sail','thrust','faults'};
+groups = {'baselines','switch','density','sail','thrust','faults','supervised'};
+for group = {'hardware','power'}
+    if isfile(fullfile(outDir,[group{1} '_results.mat']))
+        groups{end+1} = group{1};
+    end
+end
 rows = cell(0,1);
 for g = 1:numel(groups)
     source = fullfile(outDir,[groups{g} '_results.mat']);

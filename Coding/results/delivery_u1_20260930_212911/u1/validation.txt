@@ -1,0 +1,48 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+PASS testSafeEntry
+       group       caseId    timeError_s    windowError_s    fuelError_kg    pass 
+    ___________    ______    ___________    _____________    ____________    _____
+
+    "baselines"    "case"        Inf              0               0          false
+
+PASS testReproductionComparison
+PASS testAdvanceReserve
+PASS testDeploymentProcess
+PASS testCurrentWorkflow
+PASS testPowerPerturbation
+U1 1/5 U1_BASE
+U1 2/5 U1_SOLAR_585
+U1 3/5 U1_CAPACITY_270
+U1 4/5 U1_INITIAL_70
+U1 5/5 U1_LOAD_110
+         caseId           status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    _________________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "U1_BASE"            "reentry"       3.2176           "observed"             true                   12                    9.8325            9.8325     6.9946        0.44184        72.216          NaN         35.383  
+    "U1_SOLAR_585"       "reentry"       3.8104           "observed"             true                   12                    11.526            11.526     8.5882        0.43956        71.843          NaN         35.805  
+    "U1_CAPACITY_270"    "reentry"       3.4161           "observed"             true                   12                    10.404            10.404     7.5463        0.44166        72.186          NaN         29.108  
+    "U1_INITIAL_70"      "reentry"       3.2181           "observed"             true                   12                    9.8444            9.8444     6.9952        0.44143        72.149          NaN         27.264  
+    "U1_LOAD_110"        "reentry"       3.4806           "observed"             true                   12                    10.525            10.525     7.6755        0.44227        72.287          NaN         29.938  
+
+         caseId          solar_W    capacity_Wh    initialFraction    safeLoad_W    thrustLoad_W    minimumBattery_Wh    marginAboveFloor_Wh    unmetEnergy_Wh
+    _________________    _______    ___________    _______________    __________    ____________    _________________    ___________________    ______________
+
+    "U1_BASE"              650          300              0.8             230            560              79.958                19.958                 0       
+    "U1_SOLAR_585"         585          300              0.8             230            560              75.187                15.187                 0       
+    "U1_CAPACITY_270"      650          270              0.8             230            560              69.433                15.433                 0       
+    "U1_INITIAL_70"        650          300              0.7             230            560              80.514                20.514                 0       
+    "U1_LOAD_110"          650          300              0.8             251            581              76.596                16.596                 0       
+
+U1 output: C:\Users\刘丰衔\Desktop\Chosen-1-main\Coding\results\u1_20260930_211336_825

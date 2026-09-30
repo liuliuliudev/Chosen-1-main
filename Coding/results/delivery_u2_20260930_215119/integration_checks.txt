@@ -1,0 +1,25 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+PASS testSafeEntry
+       group       caseId    timeError_s    windowError_s    fuelError_kg    pass 
+    ___________    ______    ___________    _____________    ____________    _____
+
+    "baselines"    "case"        Inf              0               0          false
+
+PASS testReproductionComparison
+PASS testAdvanceReserve
+PASS testDeploymentProcess
+PASS testCurrentWorkflow
+PASS testPowerPerturbation
+Cases: 24; required artifacts: 69

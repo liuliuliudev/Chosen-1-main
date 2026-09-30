@@ -1,0 +1,9 @@
+caseId,energyError_Wh,unmetError_Wh,batteryBounded,fuelConsistent,pass
+A1_OLD_650,0,0,1,1,1
+A1_NEW_650_R00,0,0,1,1,1
+A1_NEW_650_R10,0,0,1,1,1
+A1_NEW_650_R20,0,0,1,1,1
+A1_OLD_500,0,0,1,1,1
+A1_NEW_500_R00,0,0,1,1,1
+A1_NEW_500_R10,0,0,1,1,1
+A1_NEW_500_R20,0,0,1,1,1

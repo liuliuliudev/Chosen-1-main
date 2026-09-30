@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>CelesTrak: Astrodynamics Software by David Vallado</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/web/bootstrap4/css/bootstrap.min.css">
+<script src="/web/jquery/jquery-3.7.1.min.js"></script>
+<script src="/web/popper/umd/popper.min.js"></script>
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/web/bootstrap4/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/new-site.css">
+
+</head>
+
+<body>
+
+<div class=container>
+
+<nav class="navbar navbar-expand-lg lightBG navbar-light">
+	<a class="navbar-brand" href="https://celestrak.org/">CelesTrak<sup>&reg;</sup>
+  <img src="/images/CT-icon-256-t.png" alt="CelesTrak" style="width: 64px;"></a>
+	<!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class=navbar-nav>
+  	<li class=nav-item dropdown>
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Orbital Data</a>
+      <div class="dropdown-menu lightBG mediumSize">
+        <a class="dropdown-item" href="/NORAD/elements/">Current Data (GP)</a>
+        <a class="dropdown-item" href="/NORAD/documentation/gp-data-formats.php">A New Way to Obtain GP Data</a>
+        <a class="dropdown-item" href="/NORAD/elements/gp-statistics.php">GPE Statistics</a>
+        <a class="dropdown-item" href="/NORAD/archives/request.php">Special Data Request (GP)</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/NORAD/elements/supplemental/">Supplemental Data (SupGP)</a>
+        <a class="dropdown-item" href="/NORAD/documentation/sup-gp-queries.php">How to Perform SupGP Queries</a>
+        <a class="dropdown-item" href="/NORAD/elements/supplemental/table-rms.php?UNIQUE&WORSE-THAN=25">SupGP vs. GP Comparisons</a>
+        <a class="dropdown-item" href="/NORAD/elements/supplemental/supgp-statistics.php">SupGP Statistics</a>
+        <a class="dropdown-item" href="/NORAD/archives/sup-request.php">Special Data Request (SupGP)</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/NORAD/documentation/">Documentation</a>
+      </div>
+  	</li>
+  	<li class=nav-item dropdown>
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Satellite Catalog</a>
+      <div class="dropdown-menu lightBG mediumSize">
+        <a class="dropdown-item" href="/satcat/">SATCAT</a>
+        <a class="dropdown-item" href="/satcat/search.php">Search the SATCAT</a>
+        <a class="dropdown-item" href="/satcat/satcat-format.php">SATCAT Documentation</a>
+        <a class="dropdown-item" href="/satcat/boxscore.php">SATCAT Boxscore</a>
+        <a class="dropdown-item" href="/satcat/launch-boxscore.php">Launch Boxscore</a>
+        <a class="dropdown-item" href="/satcat/launchsites.php">Maps of Launch Sites</a>
+      </div>
+  	</li>
+
+  	<li class=nav-item dropdown>
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SOCRATES</a>
+      <div class="dropdown-menu lightBG mediumSize">
+        <a class="dropdown-item" href="/SOCRATES/">SOCRATES Plus</a>
+        <a class="dropdown-item" href="/SOCRATES/search.php">Search SOCRATES Plus</a>
+        <a class="dropdown-item" href="/SOCRATES/socrates-format.php">SOCRATES Plus Format Documentation</a>
+      </div>
+  	</li>
+<!--
+    <li class="nav-item">
+      <a class="nav-link" href="https://celestrak.org/SOCRATES/">SOCRATES</a>
+    </li>
+-->
+  	<li class=nav-item dropdown>
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Space Data</a>
+      <div class="dropdown-menu lightBG mediumSize">
+        <a class="dropdown-item" href="/GPS/">GPS Status, Almanacs, NANUs</a>
+        <a class="dropdown-item" href="/SpaceData/">Earth Orientation Parameters</a>
+        <a class="dropdown-item" href="/SpaceData/">Space Weather Data</a>
+      </div>
+  	<li class=nav-item dropdown>
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Library</a>
+      <div class="dropdown-menu lightBG mediumSize">
+        <a class="dropdown-item" href="/columns/"><i>Satellite Times</i> Columns</a>
+        <a class="dropdown-item" href="/publications/">T.S. Kelso's Publications</a>
+        <a class="dropdown-item" href="/software/">Software Repository</a>
+        <a class="dropdown-item" href="/software/tutorials/"><b>NEW: Software Tutorials</b></a>
+      </div>
+  	</li>
+  </ul>
+	</div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <a target=donate href="https://giving.gofundme.com/campaign/750670/donate/" title="Help us fund CelesTrak operations and future development!" alt="Please donate!"><img border=0 src="/images/donate-small.gif"></a>
+  </div>
+</nav>
+<br>
+
+<h2 class=center>Astrodynamics Software</h2>
+
+<p class=center><img class=auto border=0 src="/software/vallado/Vallado5FrontCover.jpeg" width=450 valign=middle>
+  <!-- <img class=auto border=0 src="/software/vallado/Vallado5BackCover.jpeg" width=442 valign=middle> --></p>
+
+<h2 class=center><i>Fundamentals of Astrodynamics and Applications</i><br>Fifth Edition</h2>
+
+<h3 class=center>by<br>David Vallado</h3>
+
+<p class=center><i>Last updated 2023 May 10</i></p>
+
+<hr width=50%>
+
+<p>
+<ul>
+  <li><p><b>Purchase the Text</b></p></li>
+  <p>ISBN: 978-1881883210 and 978-1881883227. Pages: 1122. Publisher: Microcosm Press Year: March 2022. This edition is available in softcover (List $120.00/Microcosm $97.00), hardbound (List $180.00/Microcosm $160.00), and e-book (coming soon from RedShelf.com List TBD) formats.</p>
+    <ul>
+    <li><p><a target="_BLANK" href="https://astrobooks.com/vallado5sb.aspx">Astrobooks.com</a><br>
+      Contact <a href="mailto:bookstore@smad.com">bookstore@smad.com</a> if you have problems or questions.</p></li>
+    </ul>
+
+  <li><p><b>Errata</b></p></li>
+    <ul>
+    <li><p><a href="vallado/errataver1.pdf">Errata listing for First Edition (as of 2000 Apr 19)</a></p></li>
+    <li><p><a href="vallado/errataver2.pdf">Errata listing for Second Edition (as of 2004 Aug 01)</a></p></li>
+    <li><p><a href="vallado/errataver2nd.pdf">Errata listing for Second Edition, Second Printing (as of 2006 February 18)</a></p></li>
+    <li><p><a href="vallado/errataver3.pdf">Errata listing for Third Edition (as of 2011 Jun 20)</a></p></li>
+    <li><p><a href="vallado/ErrataVer4.pdf">Errata listing for Fourth Edition [Consolidated Errata for all editions] (as of 2019 Jun 18)</a></p></li>
+    <li><p><a href="vallado/ErrataVer5.pdf">Errata listing for Fifth Edition (as of 2023 Mar 2)</a></p></li>
+    </ul>
+
+  <li><p><b>Software and Data</b></p></li>
+    <ul>
+    <li><p>See CelesTrak's GitHub repository at <a href="https://github.com/CelesTrak/fundamentals-of-astrodynamics">https://github.com/CelesTrak/fundamentals-of-astrodynamics</a></p></li>
+    </ul>
+<!--
+  <li><p><b>Software and Data</b></p></li>
+    <ul>
+	  <li><p><a href="vallado/fortran.zip">Computer software in FORTRAN</a> (as of 2023 May 09)</p></li>
+  	<li><p><a href="vallado/cpp.zip">Computer software in C++</a> (as of 2023 May 09)</p></li>
+	  <li><p><a href="vallado/pascal.zip">Computer software in Pascal</a> (as of 2023 May 09)</p></li>
+  	<li><p><a href="vallado/matlab.zip">Computer software in MATLAB</a> (as of 2023 May 09)</p></li>
+  	<li><p><a href="vallado/cs.zip">Computer software in C#</a> (as of 2023 May 09)</p></li>
+  	<li><p><a href="vallado/datalib.zip">Data for all versions</a> (as of 2023 May 09)</p></li>
+    </ul>
+  	<p>Some of the code is available in other languages, although not all routines are present. Examples are Java and Excel (VBA).</p>
+
+  <li><p><b>Organization of the Material</b></p></li>
+  <p>The code is available in several languages, and it is organized roughly
+  according to function. Where feasible, all the time routines are in one file,
+  the math techniques in another, and so forth.</p>
+  <p><ul>
+  <table>
+    <tr><td width=150>AST2BODY</td><td>Two-body relations</td></tr>
+    <tr><td>COMPLX</td><td>Complex math</td></tr>
+    <tr><td>CONSTS</td><td>Constants WGS-84, JGM-2, etc.</td></tr>
+    <tr><td>ASTDC</td><td>Differential correction</td></tr>
+    <tr><td>ASTINTER</td><td>Interplanetary</td></tr>
+    <tr><td>ASTIOD</td><td>Initial orbit determination</td></tr>
+    <tr><td>ASTMANV</td><td>Maneuvers</td></tr>
+    <tr><td>ASTMATH</td><td>Math</td></tr>
+    <tr><td>ASTPERT</td><td>Perturbation</td></tr>
+    <tr><td>ASTREDUC</td><td>Reduction of coordinates</td></tr>
+    <tr><td>ASTTIME</td><td>Time</td></tr>
+    <tr><td>ASTUTIL</td><td>Character operations</td></tr>
+    <tr><td>SGP4UNIT</td><td>SGP4 routines</td></tr>
+    <tr><td>&nbsp;</td><td>See <a href="/publications/AIAA/2006-6753/">"Revisiting Spacetrack Report #3"</a> [AIAA 2006-6753] for more details.</td></tr>
+    <tr><td>SGP4DC</td><td>SGP4 Orbit Determination routines</td></tr>
+    <tr><td>&nbsp;</td><td>See <a href="/publications/AIAA/2008-6770/">"SGP4 Orbit Determination"</a> [AIAA 2008-6770] for more details.</td></tr>
+  </table>
+  </ul></p>
+  
+  <p>Several data files are needed for some of the files.</p>
+  <p><ul>
+  <table>
+    <tr><td width=150>NUT85.DAT</td><td>Nutation coefficients for planetary 85</td></tr>
+    <tr><td>NUTATION.DAT</td><td>Nutation coefficients for 106</td></tr>
+    <tr><td>ATMOSEXP.DAT</td><td>Sample exponential atmosphere values</td></tr>
+    <tr><td>TESTASTF.DAT</td><td>Input for sample test program</td></tr>
+    <tr><td>SENSOR.DAT</td><td>Sensor sample values</td></tr>
+    <tr><td>GEOS1.IN</td><td>DC input test 1</td></tr>
+    <tr><td>GEOS2.IN</td><td>DC input test 2</td></tr>
+    <tr><td>GEOS5.IN</td><td>DC input test 5</td></tr>
+    <tr><td>GEOS1.TXT</td><td>DC sample output results 1</td></tr>
+    <tr><td>GEOS2.TXT</td><td>DC sample output results 2</td></tr>
+    <tr><td>GEOS5.TXT</td><td>DC sample output results 5</td></tr>
+    <tr><td>SGP4-VER.TLE</td><td>Sample SGP4 test cases</td></tr>
+  </table>
+  </ul></p>
+  
+  <li><p><b><a href="vallado/AstroSoftware.xlsx">Cross-Reference of Available Functions</a></b> [Excel spreadsheet] (as of 2018 Mar 15)</p></li>
+  <p>Within each file there are specific routines to accomplish various 
+  operations. Effort has been taken to use similar names and function scopes, 
+  although there are some differences based on language features. The  SOFTWARE 
+  worksheet discusses the specific routines that are available within each 
+  larger technical area.</p>
+  <p>The ALGORITHMS worksheet lists which routines are available (MATLAB).</p>
+  <p>The EXAMPLES worksheet lists what MATLAB scripts will perform the example 
+  exercises in the text. Many are complete, but a few remain to finish all the 
+  examples in the text.</p>
+  <p>The test program is a simple program that executes the input/output 
+  operations of each subroutine in that package. There isn't anything fancy 
+  about it. It's just intended to be a quick check of the answers. The 
+  TESTASTF.DAT file contains my results using the codes. Additional work is 
+  needed to update this file, but it's a start.</p>
+  
+	<li><p><b><a href="vallado/BookChap6Scenarios.zip">STK Scenarios from Chapter 6</a></b> (5,592,553 bytes) (as of 2011 Dec 26)</p></li>
+	<p>These scenarios are useful to see the various transfers in 3-D. Other scenarios are in various stages of development.</p>
+</ul>
+-->
+<p class=center><img class=auto border=0 src="/software/vallado/Vallado5BackCover.jpeg" width=900 valign=middle></p>
+
+<hr width=50%>
+
+<p class=center><i>
+Questions and comments:<br>
+Work e-mail: <a href="mailto:dvallado@comspoc.com">dvallado@comspoc.com</a><br>
+Personal e-mail: <a href="mailto:davallado@gmail.com">davallado@gmail.com</a><br>
+<!-- Work telephone: 877-292-CSSI -->
+</i></p>
+
+<br>
+<footer class="footer lightBG">
+	<div class="d-flex justify-content-between align-items-center">
+		<span class=NOmobile>
+		<img src="/images/CT-icon-256-t.png" alt="CelesTrak" height=100 style="padding-left: 25px; padding-right: 50px;">
+		</span>
+  	<span class="center mediumSize" style="padding-top: 10px; padding-bottom: 10px; font-style: italic; margin: auto;">
+    	<a href="/webmaster.php" title="About the Webmaster">Dr. T.S. Kelso</a>
+    	<a href="mailto:TS.Kelso@celestrak.org">[TS.Kelso@celestrak.org]</a><br>
+    	Follow <a href="https://bsky.app/profile/tskelso.bsky.social">@TSKelso</a> on Bluesky<br>
+  		  Last updated: 2025 Feb 12 22:47:11 UTC<br>
+  Accessed 326,255 times<br>
+  Current system time: 2026 Sep 30 04:53:53 UTC<br>
+  		<a tabindex="0" title="CelesTrak's Simple Privacy Policy" data-toggle="popover" data-trigger="focus"
+  		data-placement="top" data-content="We do not use cookies on CelesTrak and
+  		we do not collect any personal information, other than IP addresses, which
+  		are used to detect and block malicious activity and to assess system
+  		performance. We do not use IP addresses for tracking or any other
+  		purposes. No personal data is shared with third parties."><span style="color:blue">CelesTrak's
+  		Simple Privacy Policy</span></a>
+  	</span>
+		<span class=NOmobile>
+		<img src="/images/CT-icon-256-t.png" alt="CelesTrak" height=100 style="padding-left: 50px; padding-right: 25px;">
+		</span>
+	</div>
+</footer>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+});
+</script>
+</div>
+
+</body>
+
+</html>

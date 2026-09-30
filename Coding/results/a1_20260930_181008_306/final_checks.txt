@@ -1,0 +1,6 @@
+         caseId         sameStatus    timeError_s    fuelError_kg    pass 
+    ________________    __________    ___________    ____________    _____
+
+    "A1_NEW_650_R10"      true          2.9685        2.1228e-07     true 
+    "A1_NEW_500_R10"      true          12.644        4.4054e-13     true 
+

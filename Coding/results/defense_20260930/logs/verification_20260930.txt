@@ -1,0 +1,22 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+         generatedAt            timeZone              matlabVersion                          gitCommit                        atmosphereStatus       budgetStatus       supervisorStatus       missingCount           indexStatus        
+    _____________________    _______________    _________________________    __________________________________________    ______________________    ____________    ______________________    ____________    __________________________
+
+    "2026-09-30 11:49:48"    "Asia/Shanghai"    "25.1.0.2943329 (R2025a)"    "de530674049b36e59ee33ab63bd9bc6a2077d5b2"    "candidate_unverified"    "unverified"    "candidate_simulation"         0          "complete_with_candidates"
+
+         generatedAt            timeZone              matlabVersion                          gitCommit                        atmosphereStatus       budgetStatus       supervisorStatus       missingCount           indexStatus        
+    _____________________    _______________    _________________________    __________________________________________    ______________________    ____________    ______________________    ____________    __________________________
+
+    "2026-09-30 11:49:48"    "Asia/Shanghai"    "25.1.0.2943329 (R2025a)"    "de530674049b36e59ee33ab63bd9bc6a2077d5b2"    "candidate_unverified"    "unverified"    "candidate_simulation"         0          "complete_with_candidates"
+

@@ -1,0 +1,3 @@
+solarEol_W,eclipseFraction,idealMeanGeneration_W,requestedMeanLoad_W,eclipseBaseBattery_Wh,minimumBattery_Wh,unmetBaseEnergy_Wh,actualDutyFraction,status
+650,0.372310824830402,407.997963860239,387.5,141.786471284133,60.0598126344824,0,0.44243858025703,team_assumption
+500,0.372310824830402,313.844587584799,387.5,141.786471284133,60,374.78046202967,0.313844587584799,team_assumption

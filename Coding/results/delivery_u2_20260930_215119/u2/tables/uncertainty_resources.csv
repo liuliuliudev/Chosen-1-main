@@ -1,0 +1,2 @@
+solar_W,capacity_Wh,initialFraction,safeLoad_W,thrustLoad_W,minimumBattery_Wh,marginAboveFloor_Wh,unmetEnergy_Wh
+585,270,0.7,251,581,70.5627665615585,16.5627665615585,0

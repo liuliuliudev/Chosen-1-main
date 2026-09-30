@@ -1,0 +1,21 @@
+         caseId          energyError_Wh    unmetError_Wh    bounded    fuelError_kg    deployCommands    confirmations    pass 
+    _________________    ______________    _____________    _______    ____________    ______________    _____________    _____
+
+    "U1_BASE"                       0            0           true       1.0211e-12           1                 1          true 
+    "U1_SOLAR_585"                  0            0           true       2.0395e-13           1                 1          true 
+    "U1_CAPACITY_270"               0            0           true       1.0131e-13           1                 1          true 
+    "U1_INITIAL_70"                 0            0           true       2.7733e-13           1                 1          true 
+    "U1_LOAD_110"          2.8422e-14            0           true       6.2383e-13           1                 1          true 
+
+U1 resolution U1_SOLAR_585
+U1 resolution U1_CAPACITY_270
+U1 resolution U1_INITIAL_70
+U1 resolution U1_LOAD_110
+         caseId          sameStatus    timeError_s    fuelError_kg    pass 
+    _________________    __________    ___________    ____________    _____
+
+    "U1_SOLAR_585"         true          2.1342        8.5549e-07     true 
+    "U1_CAPACITY_270"      true          3.3746        1.5632e-13     true 
+    "U1_INITIAL_70"        true          2.9497        2.3249e-07     true 
+    "U1_LOAD_110"          true          3.5199        3.0553e-13     true 
+

@@ -1,0 +1,3 @@
+caseId,status,tWindowExit_d,windowExitStatus,windowExitObserved,windowReturnCount,windowObservationEnd_d,t120_d,tSwitch_d,propUsed_kg,thrustOn_h,deadlineMet,runtime_s
+SUP_POWER_650,reentry,3.08808100961908,observed,1,12,9.62582346714128,9.62582346714128,6.73761748487729,0.440463371804732,71.9911687518938,NaN,52.0016466
+SUP_POWER_500,power_failure,NaN,not_observed,0,0,0.105325748243,NaN,NaN,0.00612221242105448,1.00063990732247,NaN,0.7260589

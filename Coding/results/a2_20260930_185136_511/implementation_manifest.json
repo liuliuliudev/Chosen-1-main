@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Coding/config/experiment_matrix.m",
+    "sha256": "14158ed5771e79214a479a76f422c4ab9f958605e814c816e1ab2b112c53c316"
+  },
+  {
+    "path": "Coding/src/control/deploymentState.m",
+    "sha256": "afcd628ca9601da222e39cf78ed1dd66414099579867b787aede6fda936d779d"
+  },
+  {
+    "path": "Coding/src/control/deploymentDynamics.m",
+    "sha256": "dcb36544802258718fd0d9af380f56108d0a5e1dc89f35194da1e26b589645cb"
+  },
+  {
+    "path": "Coding/src/control/canStartDeployment.m",
+    "sha256": "a59777e24de26b38990d2a989b96aac5ffcbbb0949dffb3371a185bede40fe3d"
+  },
+  {
+    "path": "Coding/src/propagation/propagateCase.m",
+    "sha256": "65b9cfb7f1ef615db793bacfb44c22be2b96ee4eb95c37d0b69b417337cf41c1"
+  },
+  {
+    "path": "Coding/tests/testDeploymentProcess.m",
+    "sha256": "c9b05e671e0c247c4a8063bd98e9afa5f2928be1088206e777c25e5ca91c5531"
+  }
+]

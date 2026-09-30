@@ -18,7 +18,8 @@ if ~isstruct(facts) || ~all(isfield(facts,required)) || ...
 end
 caseLedger = ledger;
 reasons = strings(0,1);
-thrustChanged = abs(pCase.thruster.thrust_N-pBase.thruster.thrust_N) > 1e-12;
+thrustChanged = abs(pCase.thruster.thrust_N-pBase.thruster.thrust_N) > 1e-12 || ...
+    abs(pCase.thruster.Isp_s-pBase.thruster.Isp_s) > 1e-9;
 sailChanged = abs(pCase.sail.addedArea_m2-pBase.sail.addedArea_m2) > 1e-9;
 if thrustChanged
     selected = ismember(caseLedger.itemId,["thruster_input","propulsion_dry"]);

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Coding/config/experiment_matrix.m",
+    "sha256": "14158ed5771e79214a479a76f422c4ab9f958605e814c816e1ab2b112c53c316"
+  },
+  {
+    "path": "Coding/src/control/deploymentState.m",
+    "sha256": "afcd628ca9601da222e39cf78ed1dd66414099579867b787aede6fda936d779d"
+  },
+  {
+    "path": "Coding/src/control/deploymentDynamics.m",
+    "sha256": "dcb36544802258718fd0d9af380f56108d0a5e1dc89f35194da1e26b589645cb"
+  },
+  {
+    "path": "Coding/src/control/canStartDeployment.m",
+    "sha256": "a59777e24de26b38990d2a989b96aac5ffcbbb0949dffb3371a185bede40fe3d"
+  },
+  {
+    "path": "Coding/src/propagation/propagateCase.m",
+    "sha256": "cd9b97c74d43bbe890e272569e93a063a84346ebc94d18eb5f7ebbb1beff5351"
+  },
+  {
+    "path": "Coding/tests/testDeploymentProcess.m",
+    "sha256": "847cdd9e0ecd7f88701804088923811642c95ba8416a50f761fb566e95c80cd9"
+  },
+  {
+    "path": "Coding/scripts/run_deployment_a2.m",
+    "sha256": "f755d35200cb64194f09ddedf2bf95d9a2c88daf4b759ae424e94712faee4bbf"
+  },
+  {
+    "path": "Coding/scripts/verify_deployment_a2.m",
+    "sha256": "d785b9961b2570eb7a36ca04d5164963bb3ca8fbdb032e7c232e9d7f64afd7ef"
+  },
+  {
+    "path": "Coding/scripts/check_deployment_a2_resolution.m",
+    "sha256": "c25de180dd3cef9d2a8e45a0dfdeb0705ca4b864149dfae8a1c083cab27e3a3f"
+  }
+]

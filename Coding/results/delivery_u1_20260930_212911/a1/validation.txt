@@ -1,0 +1,55 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+PASS testSafeEntry
+       group       caseId    timeError_s    windowError_s    fuelError_kg    pass 
+    ___________    ______    ___________    _____________    ____________    _____
+
+    "baselines"    "case"        Inf              0               0          false
+
+PASS testReproductionComparison
+PASS testAdvanceReserve
+PASS testDeploymentProcess
+A1 1/8 A1_OLD_650
+A1 2/8 A1_NEW_650_R00
+A1 3/8 A1_NEW_650_R10
+A1 4/8 A1_NEW_650_R20
+A1 5/8 A1_OLD_500
+A1 6/8 A1_NEW_500_R00
+A1 7/8 A1_NEW_500_R10
+A1 8/8 A1_NEW_500_R20
+         caseId             status         tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    ________________    _______________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "A1_OLD_650"        "reentry"             3.1541         "observed"               true                   13                     9.7845           9.7845     6.9304         0.44125       72.119          NaN           64.11 
+    "A1_NEW_650_R00"    "reentry"             3.1541         "observed"               true                   13                     9.7845           9.7845     6.9304         0.44125       72.119          NaN           61.09 
+    "A1_NEW_650_R10"    "reentry"             3.2176         "observed"               true                   12                     9.8317           9.8317     6.9946         0.44184       72.216          NaN           56.94 
+    "A1_NEW_650_R20"    "reentry"             3.3499         "observed"               true                   12                      10.21            10.21     7.3519         0.44135       72.136          NaN          63.561 
+    "A1_OLD_500"        "power_failure"          NaN         "not_observed"           false                   0                   0.045152              NaN        NaN       0.0030611      0.50032          NaN         0.47927 
+    "A1_NEW_500_R00"    "reentry"             7.0454         "observed"               true                   28                     23.151           23.151     20.181         0.43399       70.933          NaN          156.14 
+    "A1_NEW_500_R10"    "reentry"              9.934         "observed"               true                   60                     28.465           28.465     25.478         0.43073         70.4          NaN          119.51 
+    "A1_NEW_500_R20"    "reentry"             11.452         "observed"               true                   80                     33.978           33.978     30.999         0.42859        70.05          NaN          238.79 
+
+         caseId         reserveFraction    minimumBattery_Wh    finalBattery_Wh    unmetBaseEnergy_Wh
+    ________________    _______________    _________________    _______________    __________________
+
+    "A1_OLD_650"                0               60.176                 300                    0      
+    "A1_NEW_650_R00"            0               60.176                 300                    0      
+    "A1_NEW_650_R10"          0.1               79.958                 300                    0      
+    "A1_NEW_650_R20"          0.2               92.181              170.01                    0      
+    "A1_OLD_500"                0                   60                  60               2.1859      
+    "A1_NEW_500_R00"            0               62.766              215.85                    0      
+    "A1_NEW_500_R10"          0.1               81.099              217.12                    0      
+    "A1_NEW_500_R20"          0.2               93.321              214.69                    0      
+
+A1 output: C:\Users\刘丰衔\Desktop\Chosen-1-main\Coding\results\current_20260930_200345_605\a1

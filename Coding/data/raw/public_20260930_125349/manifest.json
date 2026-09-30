@@ -1,0 +1,52 @@
+[
+  {
+    "id": "nasa_propulsion",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+    "accessedUtc": "2026-09-30T04:53:49.745687+00:00",
+    "resolvedUrl": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+    "status": "downloaded_not_certified",
+    "file": "nasa_propulsion.html",
+    "sha256": "2564994d78e4d85408923b956e6f6fe49d417893cceaae39f1619f2aadbe6fa0"
+  },
+  {
+    "id": "nasa_deorbit",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/",
+    "accessedUtc": "2026-09-30T04:53:49.746714+00:00",
+    "resolvedUrl": "https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/",
+    "status": "downloaded_not_certified",
+    "file": "nasa_deorbit.html",
+    "sha256": "dec690d45d6a6a2ef383e9694865bcf7a3cda2927702aa584137bd14f13c26b9"
+  },
+  {
+    "id": "nasa_power",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/power/",
+    "accessedUtc": "2026-09-30T04:53:49.746714+00:00",
+    "status": "unavailable",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "vallado_catalog",
+    "url": "https://celestrak.org/software/vallado-sw.php",
+    "accessedUtc": "2026-09-30T04:53:50.500187+00:00",
+    "resolvedUrl": "https://celestrak.org/software/vallado-sw.php",
+    "status": "downloaded_not_certified",
+    "file": "vallado_catalog.html",
+    "sha256": "1466548caf6eec53fea78a9d42e5492aad703826e549e2bb7fcfcb7088eaabca"
+  },
+  {
+    "id": "vallado_data",
+    "url": "https://celestrak.org/software/vallado/datalib.zip",
+    "accessedUtc": "2026-09-30T04:53:51.979930+00:00",
+    "resolvedUrl": "https://celestrak.org/software/vallado/datalib.zip",
+    "status": "downloaded_not_certified",
+    "file": "vallado_data.zip",
+    "sha256": "0b16895da03bb7bb8193dca0cfa2c32cd1bf02ec7cdf37fb07aa28e7fba16c73"
+  },
+  {
+    "id": "busek_hall",
+    "url": "https://www.busek.com/hall-effect-thrusters",
+    "accessedUtc": "2026-09-30T04:53:52.473012+00:00",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

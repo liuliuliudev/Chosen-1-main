@@ -1,0 +1,166 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+baselines: B0 (1/4)
+baselines: B1 (2/4)
+baselines: B2 (3/4)
+baselines: P (4/4)
+    caseId       status       tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    ______    ____________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+     "B0"     "time_limit"          NaN         "not_observed"           false                    0                      365               NaN        NaN              0             0          NaN         52.851  
+     "B1"     "reentry"          56.441         "observed"               true                   293                   89.927            89.927        NaN              0             0          NaN         13.324  
+     "B2"     "reentry"          2.7587         "observed"               true                    14                   10.906            10.906        NaN            0.8        130.76          NaN          3.722  
+     "P"      "reentry"          2.7587         "observed"               true                    14                   8.8903            8.8903      6.019        0.44379        72.534          NaN         2.5226  
+
+       status       assumedEffectiveAddedArea_m2
+    ____________    ____________________________
+
+    "unverified"                 10             
+
+     phase      aMin_km    aMax_km    aMean_km    perigeeMin_km    apogeeMax_km    timeAboveSwitchFraction
+    ________    _______    _______    ________    _____________    ____________    _______________________
+
+    "before"       350     363.34      356.32        325.49           389.09               0.99874        
+    "after"     348.09     360.87      354.46        322.97           387.28                0.7483        
+
+    caseId     sameStatus    sameWindowStatus    sameWindowEventCount    sameSwitchOccurrence    eventDiff_d    windowDiff_d    switchDiff_d    fuelDiff_kg    pass 
+    _______    __________    ________________    ____________________    ____________________    ___________    ____________    ____________    ___________    _____
+
+    "B1"         true             true                  true                    true             2.4679e-05        0.064876            NaN               0     true 
+    "B2"         true             true                  true                    true             1.0738e-05      3.2903e-08            NaN               0     true 
+    "P"          true             true                  true                    true             1.1188e-05      3.2903e-08      1.086e-07       3.908e-13     true 
+    "SW450"      true             true                  true                    true             1.3278e-07      1.7906e-07      4.865e-09      7.1492e-10     true 
+
+switch: SW300 (1/7)
+switch: SW325 (2/7)
+switch: SW350 (3/7)
+switch: SW375 (4/7)
+switch: SW400 (5/7)
+switch: SW425 (6/7)
+switch: SW450 (7/7)
+    caseId      status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    _______    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "SW300"    "reentry"       2.7587           "observed"             true                   14                     8.554             8.554     7.5999           0.56        91.529          NaN         3.2498  
+    "SW325"    "reentry"       2.7587           "observed"             true                   14                    8.5059            8.5059     6.8116        0.50231        82.099          NaN         2.8688  
+    "SW350"    "reentry"       2.7587           "observed"             true                   14                    8.8903            8.8903      6.019        0.44379        72.534          NaN         2.8726  
+    "SW375"    "reentry"       2.7587           "observed"             true                   14                    9.8976            9.8976     5.2216        0.38527         62.97          NaN         2.8536  
+    "SW400"    "reentry"       2.7587           "observed"             true                   14                    12.016            12.016     4.4198        0.32674        53.405          NaN          3.138  
+    "SW425"    "reentry"       2.7587           "observed"             true                   14                    15.969            15.969     3.6139        0.26731        43.691          NaN         3.2871  
+    "SW450"    "reentry"       2.8225           "observed"             true                   15                    21.878            21.878     2.8045        0.20699        33.831          NaN         4.2133  
+
+    caseId     selectionStatus    dominatedBy
+    _______    _______________    ___________
+
+    "SW300"    "dominated"          "SW325"  
+    "SW325"    "nondominated"       ""       
+    "SW350"    "nondominated"       ""       
+    "SW375"    "nondominated"       ""       
+    "SW400"    "nondominated"       ""       
+    "SW425"    "nondominated"       ""       
+    "SW450"    "nondominated"       ""       
+
+density: RHO_0.5 (1/5)
+density: RHO_0.75 (2/5)
+density: RHO_1 (3/5)
+density: RHO_1.5 (4/5)
+density: RHO_2 (5/5)
+      caseId       status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    __________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "RHO_0.5"     "reentry"       2.7589           "observed"             true                   14                    11.834            11.834     6.0204        0.44379        72.534          NaN         4.1309  
+    "RHO_0.75"    "reentry"       2.7588           "observed"             true                   14                    9.8718            9.8718     6.0197        0.44379        72.534          NaN         3.3248  
+    "RHO_1"       "reentry"       2.7587           "observed"             true                   14                    8.8903            8.8903      6.019        0.44379        72.534          NaN         2.7914  
+    "RHO_1.5"     "reentry"       2.7585           "observed"             true                   14                    7.9453            7.9453     5.9881        0.44038        71.978          NaN          2.702  
+    "RHO_2"       "reentry"       2.7583           "observed"             true                   14                    7.4225            7.4225      5.956        0.43891        71.737          NaN         2.6833  
+
+sail: SAIL_5 (1/4)
+sail: SAIL_10 (2/4)
+sail: SAIL_15 (3/4)
+sail: SAIL_20 (4/4)
+     caseId       status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    _________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "SAIL_5"     "reentry"       2.7587           "observed"             true                   14                    11.489            11.489      6.019        0.44379        72.534          NaN         3.5143  
+    "SAIL_10"    "reentry"       2.7587           "observed"             true                   14                    8.8903            8.8903      6.019        0.44379        72.534          NaN         2.7685  
+    "SAIL_15"    "reentry"       2.7587           "observed"             true                   14                    7.9692            7.9692      6.019        0.44379        72.534          NaN         2.6133  
+    "SAIL_20"    "reentry"       2.7587           "observed"             true                   14                    7.4963            7.4963      6.019        0.44379        72.534          NaN         2.5609  
+
+thrust: T_10 (1/4)
+thrust: T_20 (2/4)
+thrust: T_30 (3/4)
+thrust: T_40 (4/4)
+    caseId     status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    ______    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "T_10"    "reentry"       4.5385           "observed"             true                   20                    14.891            14.891     11.931        0.43891        143.47          NaN         5.0754  
+    "T_20"    "reentry"       2.7587           "observed"             true                   14                    8.8903            8.8903      6.019        0.44379        72.534          NaN         2.5443  
+    "T_30"    "reentry"       2.0349           "observed"             true                   11                    6.7661            6.7661     4.0071        0.44369        48.346          NaN         1.9611  
+    "T_40"    "reentry"       1.6396           "observed"             true                    9                     5.877             5.877     3.0023        0.44281        36.187          NaN         1.7407  
+
+faults: F1 (1/4)
+faults: F2 (2/4)
+faults: F3 (3/4)
+faults: F4 (4/4)
+    caseId     status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    ______    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+     "F1"     "reentry"       56.441           "observed"             true                   293                   89.927            89.927        NaN              0             0          NaN         13.568  
+     "F2"     "reentry"       2.7587           "observed"             true                    14                   8.2801            8.2801      6.019         0.6096        99.635          NaN         3.3044  
+     "F3"     "reentry"       2.7587           "observed"             true                    14                   10.906            10.906      6.019            0.8        130.76          NaN         4.1711  
+     "F4"     "reentry"       2.7589           "observed"             true                    14                   11.834            11.834     6.0204        0.44379        72.534          NaN         3.1064  
+
+          scenarioId             commandMode                 reasonCode          
+    ______________________    _________________    ______________________________
+
+    "nominal_thrust"          "thrust"             "THRUST_PERMITTED"            
+    "switch_deploy"           "deploy"             "SWITCH_REACHED"              
+    "deploy_unconfirmed"      "safe"               "DEPLOYMENT_UNCONFIRMED"      
+    "sail_confirmed"          "sail"               "SAIL_CONFIRMED"              
+    "authorization_denied"    "safe"               "AUTHORIZATION_DENIED"        
+    "low_power"               "safe"               "BASE_POWER_INSUFFICIENT"     
+    "attitude_fault"          "safe"               "ATTITUDE_UNAVAILABLE"        
+    "thruster_fault"          "deploy"             "THRUSTER_FAILED_DEPLOY_EARLY"
+    "half_sail"               "fallback_thrust"    "SAIL_FAULT_THRUST_FALLBACK"  
+    "sail_failed"             "fallback_thrust"    "SAIL_FAULT_THRUST_FALLBACK"  
+    "fuel_exhausted"          "deploy"             "FUEL_EXHAUSTED_DEPLOY_EARLY" 
+    "unknown_power"           "safe"               "POWER_UNKNOWN"               
+    "endpoint"                "complete"           "MODEL_ENDPOINT_REACHED"      
+
+supervised: SUP_NOMINAL (1/4)
+supervised: SUP_THRUSTER_FAILED (2/4)
+supervised: SUP_THRUST_POWER_LOW (3/4)
+supervised: SUP_ATTITUDE_UNAVAILABLE (4/4)
+              caseId                 status       tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    __________________________    ____________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "SUP_NOMINAL"                 "reentry"          2.7587         "observed"               true                    14                   8.8903            8.8903      6.019        0.44379        72.534          NaN         3.1379  
+    "SUP_THRUSTER_FAILED"         "reentry"          56.441         "observed"               true                   293                   89.927            89.927        NaN              0             0          NaN         14.327  
+    "SUP_THRUST_POWER_LOW"        "time_limit"          NaN         "not_observed"           false                    0                      365               NaN        NaN              0             0          NaN         55.728  
+    "SUP_ATTITUDE_UNAVAILABLE"    "time_limit"          NaN         "not_observed"           false                    0                      365               NaN        NaN              0             0          NaN          56.09  
+
+engineering: HW_BHT200 (1/4)
+engineering: AREA_FACTOR_0.75 (2/4)
+engineering: AREA_FACTOR_0.5 (3/4)
+engineering: AREA_FACTOR_0.25 (4/4)
+          caseId           status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    __________________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "HW_BHT200"           "reentry"       3.7483           "observed"             true                   16                    12.147            12.147     9.2031        0.38039        110.79          NaN          4.674  
+    "AREA_FACTOR_0.75"    "reentry"       2.7587           "observed"             true                   14                    9.7841            9.7841      6.019        0.44379        72.534          NaN         3.0472  
+    "AREA_FACTOR_0.5"     "reentry"       2.7587           "observed"             true                   14                    11.489            11.489      6.019        0.44379        72.534          NaN         3.0978  
+    "AREA_FACTOR_0.25"    "reentry"       2.7587           "observed"             true                   14                    16.036            16.036      6.019        0.44379        72.534          NaN         3.6493  
+
+power: SUP_POWER_650 (1/2)
+power: SUP_POWER_500 (2/2)

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "nasa_propulsion",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+    "accessedUtc": "2026-09-30T05:00:29.479070+00:00",
+    "status": "downloaded_not_certified",
+    "file": "nasa_propulsion.html",
+    "sha256": "bc03ba3fd40e6458da6636ac77be95861acd9a71f511e366a41953f1cd506f6c"
+  },
+  {
+    "id": "nasa_deorbit",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/",
+    "accessedUtc": "2026-09-30T05:00:29.479070+00:00",
+    "status": "downloaded_not_certified",
+    "file": "nasa_deorbit.html",
+    "sha256": "8da6968f2c5ebd0a555fe436fc57587ab8acbcb451ad0af00bdfe8016d7df0e9"
+  },
+  {
+    "id": "nasa_power",
+    "url": "https://www.nasa.gov/smallsat-institute/sst-soa/power/",
+    "accessedUtc": "2026-09-30T05:00:29.479070+00:00",
+    "status": "unavailable",
+    "error": "Command '['curl.exe', '--fail', '--location', '--max-time', '25', '--silent', '--show-error', 'https://www.nasa.gov/smallsat-institute/sst-soa/power/']' returned non-zero exit status 22."
+  },
+  {
+    "id": "vallado_catalog",
+    "url": "https://celestrak.org/software/vallado-sw.php",
+    "accessedUtc": "2026-09-30T05:00:30.426756+00:00",
+    "status": "downloaded_not_certified",
+    "file": "vallado_catalog.html",
+    "sha256": "5910b1d9dba3a021d10adf87d667df709a69f4eb644c96835bd72fb0688724fb"
+  },
+  {
+    "id": "vallado_data",
+    "url": "https://raw.githubusercontent.com/CelesTrak/fundamentals-of-astrodynamics/main/software/misc/pascal/ATMOSEXP.DAT",
+    "accessedUtc": "2026-09-30T05:00:31.709745+00:00",
+    "status": "downloaded_not_certified",
+    "file": "vallado_data.dat",
+    "sha256": "d2be19cc360ded6a12dd2a5b1b7c54049fb70e4108b38494b76ba0aa39b0ef4c"
+  },
+  {
+    "id": "busek_bht200",
+    "url": "https://www.busek.com/bht200",
+    "accessedUtc": "2026-09-30T05:00:32.387055+00:00",
+    "status": "downloaded_not_certified",
+    "file": "busek_bht200.html",
+    "sha256": "03bf29e3d80cf096bf38560240a2753a336017487c9eaeae177c743e8aa660f3"
+  }
+]

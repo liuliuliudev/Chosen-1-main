@@ -1,0 +1,5 @@
+caseId,status,tWindowExit_d,windowExitStatus,windowExitObserved,windowReturnCount,windowObservationEnd_d,t120_d,tSwitch_d,propUsed_kg,thrustOn_h,deadlineMet,runtime_s
+SUP_NOMINAL,reentry,2.75869817262078,observed,1,14,8.8902564773949,8.8902564773949,6.01904369097173,0.443787588149746,72.5344925221468,NaN,3.1378566
+SUP_THRUSTER_FAILED,reentry,56.4405005986313,observed,1,293,89.927422218102,89.927422218102,NaN,0,0,NaN,14.3265836
+SUP_THRUST_POWER_LOW,time_limit,NaN,not_observed,0,0,365,NaN,NaN,0,0,NaN,55.7278982
+SUP_ATTITUDE_UNAVAILABLE,time_limit,NaN,not_observed,0,0,365,NaN,NaN,0,0,NaN,56.0904405

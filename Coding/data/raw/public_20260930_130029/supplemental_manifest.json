@@ -1,0 +1,23 @@
+[
+  {
+    "file": "BHT_200_v10.pdf",
+    "url": "https://www.busek.com/s/BHT_200_v10.pdf",
+    "accessDate": "2026-09-30",
+    "sha256": "48b2d765a6003e8a6917df6f7c16a179020725aef761d3ca454b1cfd5c608ee8",
+    "status": "retrieved_not_certified"
+  },
+  {
+    "file": "ASTPERT.PAS",
+    "url": "https://raw.githubusercontent.com/CelesTrak/fundamentals-of-astrodynamics/main/software/misc/pascal/ASTPERT.PAS",
+    "accessDate": "2026-09-30",
+    "sha256": "0f841f48d787d9764293dd9c92dec095adac6edde8da2210393953795186bcd4",
+    "status": "retrieved_not_certified"
+  },
+  {
+    "file": "drag_review.json",
+    "url": "https://api.crossref.org/works/10.34133/space.0115",
+    "accessDate": "2026-09-30",
+    "sha256": "e3c10cc2a7ed81b33cc2a5f008183d1bfe1121044bcb079972d84edd5e9e37cd",
+    "status": "retrieved_not_certified"
+  }
+]

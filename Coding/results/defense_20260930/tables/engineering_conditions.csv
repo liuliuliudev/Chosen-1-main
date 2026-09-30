@@ -1,0 +1,4 @@
+itemId,value,inputStatus,status
+same_thruster_workpoint,NaN,unknown,unverified
+sail_deployment_confirmed,NaN,unknown,unverified
+sail_attitude_maintained,NaN,unknown,unverified

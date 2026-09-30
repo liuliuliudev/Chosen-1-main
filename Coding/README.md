@@ -1,10 +1,46 @@
 # 受控离轨 MATLAB 仿真工程
 
+## 当前技术证据与答辩准备
+
+阅读 `docs/最终证据总表.md` 获取分组结果、来源、关键图和未完成项；`docs/评委答辩问答稿_当前版.md` 提供可查证回答。机器可读总表与来源校验值在 `docs/defense_evidence/`。这是已完成实验的整理快照，不是新增仿真或硬件认证。U2已纳入当前24例入口和新版包定义，旧ZIP内容不变。
+
+## 中等不利组合检查U2
+
+`startup; root=run_uncertainty_u2;`仍可独立运行已确认的585 W、270 Wh、初始70%、公共负载＋10%组合，保留其余主案例参数；同时完成能量审计及60/30秒检查。结果与适用边界见 `docs/中等不利组合检查_U2.md`。run_current现在也调用该组。
+
+## 主案例与关键输入检查
+
+当前主案例的输入性质、系统关系图和控制流程见 `docs/主案例说明与系统图.md`。独立中等单因素研究入口为 `startup; root=run_uncertainty_u1;`，仅运行基准、585 W、270 Wh、初始70%、公共负载＋10%五例。使用 `verify_uncertainty_u1(root)` 审计能量和事件，`check_uncertainty_u1_resolution(root)`复算四个扰动，`plot_uncertainty_u1(root)`生成对照图。
+
+U1与一个已确认的中等组合U2现已接入run_current及当前复现比较器，共24案例。较大扰动及其他组合未执行。不能将单因素或一个组合通过外推为真实成功概率；旧18/23案例ZIP不自动包含后续扩展。
+
+## 当前主线的一键入口
+
+根目录或Coding目录执行 `resultRoot=run_current;`，在新建的 `Coding/results/current_时间/` 中统一运行A1八案例、A2十案例、U1五案例、U2一案例、独立审计、必要的60/30秒对照及已有图表。四组分别保存在a1/a2/u1/u2子目录；全部必要产物齐全且审计通过后生成current_evidence.csv。预计比单案例耗时更长，日志在各子目录内。中途失败时目录保留，不能把部分产物称为完整通过。
+
+`run_all`保留为基础四策略及原扩展实验入口，`run_current`不将不同配置下的基础结果混作当前主案例。跨机复现使用 `compare_current_reproduction`，步骤见 `docs/跨机复现说明.md`。
+
+## 第二批展帆过程
+
+`startup; run_deployment_a2;` 在新a2目录运行已确认的10个案例。主案例仍为650 W＋10%余量，加入60/120/300秒实际展开与10秒反馈延迟，600秒无确认进入未知状态。`verify_deployment_a2(outRoot)`独立核对面积、动作、反馈与能量；`check_deployment_a2_resolution(outRoot)`检查正常120秒、半展开及500 W的60/30秒分辨率。
+
+仿真实际面积与控制观测分开：反馈丢失时仍按设定实际面积计算阻力，但控制器不知道面积，不能自动补推。展开期间额外30 W只持续所设动作时间；未确认等待使用SAFE负载。两份Reference文档尚未改写。
+
+## A1第一批供电比较
+
+在 Coding 目录运行 `startup; run_power_a1;`。八个案例在同一电池/日照/模式负载下比较旧调度与提前储能的0%/10%/20%额外余量，输出独立a1目录。可运行 `verify_power_a1(outRoot)` 核算能量账，`check_power_a1_resolution(outRoot)` 检查两种功率的10%余量在60/30秒计算间隔下的差异。详见 `docs/A1供电实验定义.md`。
+
+A1不启用展帆延迟与确认草稿；两份Reference目标文档的拟议措辞单列在 `docs/目标文档修改草案_A1.md`，尚未写回目标原文。
+
 ## 当前新增的审计与监督案例
 
 `run_input_audit()` 检查候选大气表，并在 `results/tables/input_audit.csv` 逐项标明来源状态。原始大气表尚未核对，状态保持 `unverified`；通过格式和趋势检查不等于物理来源已认证。
 
-`experiment_matrix('supervised')` 生成独立的 `SUP_NOMINAL` 概念案例。它用预置的退役许可、650 W 候选可用功率、姿态与推进器健康标志驱动监督器，再进入轨道传播；这些标志并非真实传感器读数，也没有食期或姿态动力学模型。`run_all` 将其与原 B0/B1/B2/P 分开保存为 `supervised_results.mat` 和 `supervised_summary.csv`。原四策略的控制定义不变。
+`experiment_matrix('supervised')` 生成独立的正常、初始推进器失效、推进功率不足、姿态不可用四个概念案例。它们用预置的许可、候选功率和健康标志驱动监督器，再进入轨道传播；这些标志并非真实传感器读数，也没有食期或姿态动力学模型。`run_all` 将其与原 B0/B1/B2/P 分开保存为 `supervised_results.mat` 和 `supervised_summary.csv`，并纳入逐案例资源审计。原四策略的控制定义不变。
+
+当前答辩用的提问、证据和未验证边界见 `docs/评委提问与证据边界.md`。监督器已驱动独立的轨道案例，但尚未模拟真实传感器、电源时序或姿态动力学。
+
+固定异常情景的功率只表示一个研究条件，不模拟功率随日照变化。若只复算这组案例，可运行 `runCaseGroup('supervised',baseline_case(),outDir)`，其中 `outDir` 指向新的表格目录；`time_limit` 仍表示在计算上限内没有观察到目标事件。
 
 适用 MATLAB **R2025a**，只依赖 MATLAB 本体。工程内部统一使用 m、s、kg、N、rad。当前是可运行的概念仿真框架；大气表和硬件参数仍是待核实的研究输入，不能直接用于正式物理结论。
 
@@ -16,6 +52,10 @@
 run_quick_demo    % 基础测试 + 短时事件案例 + 对比图
 run_all           % 全部 P0 技术实验，长期积分可能耗时
 ```
+
+现在 `resultRoot = run_all;` 从根目录或 Coding 目录都调用同一完整入口，自动写入 `Coding/results/run_时间戳/` 新目录。可显式传入 Coding/results 下尚不存在的绝对目录；已有目录或范围外路径会被拒绝。历史固定目录输出继续保留。运行结束返回本次结果根目录，图、表、视频、日志和索引均在其中。
+
+本轮补证说明见 `docs/资料核对与工程补证报告.md`，跨机步骤见 `docs/跨机复现说明.md`。新增 `hardware` 组含 BHT-200 厂家参数对照及同帆有效面积折减；`power` 组含显式电池/阴影假设下的供电受限监督轨道。`power_failure` 表示基础用电无法保障，仿真停止。这些不是新增硬件认证。
 
 单独运行一个案例：
 

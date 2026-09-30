@@ -1,0 +1,2 @@
+caseId,status,tWindowExit_d,windowExitStatus,windowExitObserved,windowReturnCount,windowObservationEnd_d,t120_d,tSwitch_d,propUsed_kg,thrustOn_h,deadlineMet,runtime_s
+U2_COMBINED,reentry,4.40431027024362,observed,1,14,13.3398423561275,13.3398423561275,10.4695848743612,0.439603032077031,71.8505512419741,NaN,47.8259974

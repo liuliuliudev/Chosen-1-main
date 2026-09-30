@@ -1,0 +1,42 @@
+[
+  {
+    "path": "Coding/config/powerScenario.m",
+    "sha256": "304135c39a9dd6d00aab3dd25820bc0a1c225e00844eb6c09af9f56e74e19ec4"
+  },
+  {
+    "path": "Coding/config/experiment_matrix.m",
+    "sha256": "a858b84de1b5f31ec34ba5989151a1b74ec2be30672acf4eabdf501a7ef5edca"
+  },
+  {
+    "path": "Coding/config/engineering_budget_candidate.csv",
+    "sha256": "130f5c0302c1a753324558622f097caabc09722a4f534eabdad963fe157d88b5"
+  },
+  {
+    "path": "Coding/src/control/powerAvailability.m",
+    "sha256": "154649a5d92e16494debb3639c2559cad236600fa1684bd5e353e45fde2de5eb"
+  },
+  {
+    "path": "Coding/src/control/advanceBattery.m",
+    "sha256": "f451fd65ffdbdbfd78d949012e613e57697ec44a364f02fa7d220b84ef09b7d7"
+  },
+  {
+    "path": "Coding/src/control/modePowerLoad.m",
+    "sha256": "85ba0031a900fd9971caf64182c9b588b1906195495b3c7c610947182bf84905"
+  },
+  {
+    "path": "Coding/src/propagation/propagateCase.m",
+    "sha256": "5c866e98bac2bbb668e687ea3a98b70a0d5095bd686d972112fe4df75014e69f"
+  },
+  {
+    "path": "Coding/scripts/run_power_a1.m",
+    "sha256": "ae2a1bebdf3f77f24df80f0b97c1d87a3b736d94d80e41013aaa0ee2ee51a480"
+  },
+  {
+    "path": "Coding/scripts/verify_power_a1.m",
+    "sha256": "e36e88cd858298a55969ac242269a1693139db14565be3bc8cd877302d56be0c"
+  },
+  {
+    "path": "Coding/scripts/check_power_a1_resolution.m",
+    "sha256": "510f08cc12e658932a12d90302ed1b42b6adabf75fb94cba913de361d92fbcdb"
+  }
+]

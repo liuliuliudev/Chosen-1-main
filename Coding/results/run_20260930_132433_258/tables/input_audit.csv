@@ -1,0 +1,10 @@
+parameter,value,unit,sourceType,sourceLocation,locator,conditions,status,verified,note
+atmosphere_table,NaN,SI,official_numeric_match,data/raw/public_20260930_130029/vallado_data.dat,lines 12-25,Numeric transcription matches; old code unit comments and altitude applicability unresolved,unverified,0,14 rows numerically matched; unit-comment and altitude/model applicability unresolved
+initial_mass,50,kg,team_assumption,config/baseline_case.m,initialMass_kg,Representative 50 kg spacecraft,candidate,0,
+initial_altitude,550000,m,team_assumption,config/baseline_case.m,initialAltitude_m,Representative 550 km circular orbit,candidate,0,
+inclination,0.925024503556995,rad,team_assumption,config/baseline_case.m,inclination_rad,Representative 53 degree orbit,candidate,0,
+thrust,0.02,N,team_assumption,config/baseline_case.m,thrust_N,Same-device workpoint not verified,candidate,0,
+specific_impulse,1200,s,team_assumption,config/baseline_case.m,Isp_s,Same-device workpoint not verified,candidate,0,
+effective_sail_area,10,m2,team_assumption,config/baseline_case.m,addedArea_m2,Effective area depends on attitude,candidate,0,
+reentry_interface,120000,m,team_definition,config/baseline_case.m,reentryAltitude_m,Simulation endpoint only,candidate,0,
+window_lower_boundary,500000,m,team_definition,config/baseline_case.m,windowLowerAltitude_m,Research metric not contest rule,candidate,0,

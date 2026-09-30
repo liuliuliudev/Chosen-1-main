@@ -1,0 +1,62 @@
+PASS testTwoBody
+PASS testJ2
+PASS testDensityDrag
+PASS testThrustMass
+PASS testEventsModes
+PASS testWindowExit
+PASS testSwitchTradeoff
+PASS testAtmosphereInput
+PASS testEngineeringBudget
+PASS testCaseResources
+PASS testDeorbitSupervisor
+PASS testSupervisedPropagation
+PASS testPowerModel
+PASS testSafeEntry
+       group       caseId    timeError_s    windowError_s    fuelError_kg    pass 
+    ___________    ______    ___________    _____________    ____________    _____
+
+    "baselines"    "case"        Inf              0               0          false
+
+PASS testReproductionComparison
+PASS testAdvanceReserve
+PASS testDeploymentProcess
+PASS testCurrentWorkflow
+A2 1/10 A2_IDEAL
+A2 2/10 A2_NORMAL_60
+A2 3/10 A2_NORMAL_120
+A2 4/10 A2_NORMAL_300
+A2 5/10 A2_PARTIAL
+A2 6/10 A2_FAILED
+A2 7/10 A2_LOST_DEPLOYED
+A2 8/10 A2_LOST_STOWED
+A2 9/10 A2_STEP_AREA
+A2 10/10 A2_NORMAL_500
+          caseId           status      tWindowExit_d    windowExitStatus    windowExitObserved    windowReturnCount    windowObservationEnd_d    t120_d    tSwitch_d    propUsed_kg    thrustOn_h    deadlineMet    runtime_s
+    __________________    _________    _____________    ________________    __________________    _________________    ______________________    ______    _________    ___________    __________    ___________    _________
+
+    "A2_IDEAL"            "reentry"       3.2176           "observed"             true                   12                    9.8317            9.8317     6.9946        0.44184        72.216          NaN         79.207  
+    "A2_NORMAL_60"        "reentry"       3.2176           "observed"             true                   12                    9.8321            9.8321     6.9946        0.44184        72.216          NaN         101.27  
+    "A2_NORMAL_120"       "reentry"       3.2176           "observed"             true                   12                    9.8325            9.8325     6.9946        0.44184        72.216          NaN         41.065  
+    "A2_NORMAL_300"       "reentry"       3.2176           "observed"             true                   12                    9.8337            9.8337     6.9946        0.44184        72.216          NaN         63.101  
+    "A2_PARTIAL"          "reentry"       3.2176           "observed"             true                   12                    9.4476            9.4476     6.9946        0.59488         97.23          NaN         30.891  
+    "A2_FAILED"           "reentry"       3.2176           "observed"             true                   12                    12.515            12.515     6.9946        0.79005        129.13          NaN         45.079  
+    "A2_LOST_DEPLOYED"    "reentry"       3.2176           "observed"             true                   12                    9.8325            9.8325     6.9946        0.44184        72.216          NaN         38.433  
+    "A2_LOST_STOWED"      "reentry"       3.2176           "observed"             true                   12                    66.325            66.325     6.9946        0.44184        72.216          NaN         506.31  
+    "A2_STEP_AREA"        "reentry"       3.2176           "observed"             true                   12                    9.8333            9.8333     6.9946        0.44184        72.216          NaN         44.295  
+    "A2_NORMAL_500"       "reentry"        9.934           "observed"             true                   60                    28.465            28.465     25.478        0.43073          70.4          NaN         190.73  
+
+          caseId          minimumBattery_Wh    unmetEnergy_Wh    motorEnergy_Wh
+    __________________    _________________    ______________    ______________
+
+    "A2_IDEAL"                 79.958                0                  0      
+    "A2_NORMAL_60"             79.958                0                0.5      
+    "A2_NORMAL_120"            79.958                0                  1      
+    "A2_NORMAL_300"            79.958                0                2.5      
+    "A2_PARTIAL"               75.928                0                  1      
+    "A2_FAILED"                75.415                0                  1      
+    "A2_LOST_DEPLOYED"         79.958                0                  1      
+    "A2_LOST_STOWED"           79.958                0                  1      
+    "A2_STEP_AREA"             79.958                0                  1      
+    "A2_NORMAL_500"            81.099                0                  1      
+
+A2 output: C:\Users\刘丰衔\Desktop\Chosen-1-main\Coding\results\current_20260930_200345_605\a2

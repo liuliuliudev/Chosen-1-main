@@ -1,5 +1,5 @@
 parameter,value,unit,sourceType,sourceLocation,locator,conditions,status
-atmosphere_table,NaN,SI,unknown,data/processed/exponential_atmosphere_candidate.csv,,Original published table and unit conversion not checked,unverified
+atmosphere_table,NaN,SI,official_numeric_match,data/raw/public_20260930_130029/vallado_data.dat,lines 12-25,Numeric transcription matches; old code unit comments and altitude applicability unresolved,unverified
 initial_mass,50,kg,team_assumption,config/baseline_case.m,initialMass_kg,Representative 50 kg spacecraft,candidate
 initial_altitude,550000,m,team_assumption,config/baseline_case.m,initialAltitude_m,Representative 550 km circular orbit,candidate
 inclination,0.9250245035569946,rad,team_assumption,config/baseline_case.m,inclination_rad,Representative 53 degree orbit,candidate

@@ -1,0 +1,24 @@
+          caseId           start_s      confirmation_s    timeout_s     motorEnergy_Wh    energyError_Wh    pass 
+    __________________    __________    ______________    __________    ______________    ______________    _____
+
+    "A2_IDEAL"                   NaN             NaN             NaN           0                0           true 
+    "A2_NORMAL_60"        6.0433e+05       6.044e+05             NaN         0.5                0           true 
+    "A2_NORMAL_120"       6.0433e+05      6.0446e+05             NaN           1                0           true 
+    "A2_NORMAL_300"       6.0433e+05      6.0464e+05             NaN         2.5                0           true 
+    "A2_PARTIAL"          6.0433e+05      6.0446e+05             NaN           1                0           true 
+    "A2_FAILED"           6.0433e+05      6.0446e+05             NaN           1                0           true 
+    "A2_LOST_DEPLOYED"    6.0433e+05             NaN      6.0493e+05           1                0           true 
+    "A2_LOST_STOWED"      6.0433e+05             NaN      6.0493e+05           1                0           true 
+    "A2_STEP_AREA"        6.0433e+05      6.0446e+05             NaN           1                0           true 
+    "A2_NORMAL_500"       2.2013e+06      2.2014e+06             NaN           1                0           true 
+
+A2 resolution A2_NORMAL_120
+A2 resolution A2_PARTIAL
+A2 resolution A2_NORMAL_500
+        caseId         timeError_s    fuelError_kg    pass 
+    _______________    ___________    ____________    _____
+
+    "A2_NORMAL_120"      2.9707        2.1228e-07     true 
+    "A2_PARTIAL"         1.7121        2.9098e-06     true 
+    "A2_NORMAL_500"      12.693        4.4054e-13     true 
+
