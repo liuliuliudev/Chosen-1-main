@@ -1,0 +1,10 @@
+results/figures/*
+results/tables/*
+results/videos/*
+results/logs/*
+results/quick_demo/*
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+!results/videos/.gitkeep
+!results/logs/.gitkeep
+*.asv

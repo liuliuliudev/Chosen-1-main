@@ -1,0 +1,6 @@
+mode,available_W,knownLoad_W,peakLoad_W,margin_W,status
+S0,650,230,230,420,unverified
+S1,650,560,560,90,unverified
+S2,650,240,240,410,unverified
+S3,650,215,215,435,unverified
+SAFE,650,230,230,420,unverified
